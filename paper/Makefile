@@ -1,5 +1,5 @@
 paper:
-	pdflatex $@.tex && bibtex $@.aux && pdflatex $@.tex && open $@.pdf
+	pdflatex $@.tex && bibtex $@.aux && pdflatex $@.tex
 
 .PHONY : clean
 clean :
