@@ -3,12 +3,19 @@
 \usepackage{url}
 \usepackage[nottoc]{tocbibind} % Includes "References" in the table of contents
 \usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
 
+
+% Paragraph header
 \newcommand{\para}[1]{\vspace{.05in}\noindent{\bf #1}}
 
+% For 5th, etc...
+\newcommand{\ts}{\textsuperscript}
+
 % \title{Influencers in Machine Learning}
+% \title{The Rise of the Data Economy}
 \title{%
-		The Rise of the Data Economy \\
+		A Brief History of the Data Economy \\
 		\large Data: Past, Present, Future; Spring 2019 \\
 }
 \author{Graham P. Patterson}
@@ -22,6 +29,10 @@
 
 % the data landscape
 \input{landscape}
+
+\input{creditHistory}
+
+\input{responses}
 
 \bibliographystyle{acm}
 \bibliography{references}
