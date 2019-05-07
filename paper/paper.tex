@@ -4,13 +4,16 @@
 \usepackage[nottoc]{tocbibind} % Includes "References" in the table of contents
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1in]{geometry}
-
+\usepackage{setspace} % for double spacing
+\usepackage{listings} % for code syntax formatting
 
 % Paragraph header
 \newcommand{\para}[1]{\vspace{.05in}\noindent{\bf #1}}
 
 % For 5th, etc...
 \newcommand{\ts}{\textsuperscript}
+
+\newcommand{\mca}{The Mercantile Agency}
 
 % \title{Influencers in Machine Learning}
 % \title{The Rise of the Data Economy}
@@ -21,6 +24,9 @@
 }
 \author{Graham P. Patterson}
 \date{}
+
+\doublespacing
+% \setstretch{2}
 
 \begin{document}
 
@@ -33,6 +39,8 @@
 \input{landscape} 		% the data landscape
 
 \input{implications}
+
+\newpage
 
 \bibliographystyle{acm}
 \bibliography{references}

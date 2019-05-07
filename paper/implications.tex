@@ -9,14 +9,35 @@ of this economy has raised ethical and moral concerns.
 
 % How categorizing data dehumanizes and reinforces bias and racism
 \para{Dehumanizing}
-Francis Grund wrote of the deeply personal nature of the 20\ts{th} century American
-credit system and considered this its defining feature. Critics of the modern
-system point out the dehumanizing nature the credit system and many others that rely on
-big data. In order for predictive models to make classifications on or inferences
-about statistical populations, non-numerical data needs to be transformed. For example,
-whether you're marital status is single, divorced, or married needs to be represented
-as a numerical value. This is the case for all non-numerical data. At what cost are
-we fitting data to the models that shape the lives of many?
+Francis Grund wrote of the deeply personal nature of the 20\ts{th} century
+American credit system and considered this its defining feature. Critics of the
+modern system point out the dehumanizing nature the credit system and many
+others that rely on big data. In order for predictive models to make
+classifications on or inferences about statistical populations, non-numerical
+data representing a person needs to be transformed. For example, whether you're marital status is
+single, divorced, or married needs to be represented as a numerical value. This
+is the case for all non-numerical data. At what cost are we transforming an individual's data to fit the
+models that shape the lives of many?
+
+The categorization of data began with the \mca, where data collectors used
+short hand to describe features of the data. They created rating systems
+similar to the mapping of academic performance to letter
+grades~\cite{lauer2017creditworthy}. In the 1960-70's, credit bureaus were faced
+with the challenge of identifying individuals and called for a universal
+numbering system. The obvious choice at this time was the Social Security
+Number. The financial industry had already began using it as an identifier for
+individuals and faced no legal challenges for non-governmetnal use. With the
+use of this number as an identifier, the crediting agencies reduced a person to
+a numerical value.
+
+% Figure for sql join on ssn
+\begin{center}
+\begin{lstlisting}[language=SQL, basicstyle=\sffamily]
+		SELECT ssn, name, address, creditScore
+				FROM master
+				WHERE ssn=@target
+\end{lstlisting}
+\end{center}
 
 % Not sure if this belongs here.
 % What am I saying here?
@@ -33,6 +54,8 @@ becomes increasingly less apparent, the gaze of the surviellance entities is
 more profound, producing a reality of constant surviellance. Americans did not
 realize how much they were giving up until the late 1960's during congressional
 hearings~\cite{lauer2017creditworthy}.
+
+% Interesting note on pg 183 of Lauer
 
 \para{Companies Respond}
 The common response by technology companies is the "trust us" model. Under this
