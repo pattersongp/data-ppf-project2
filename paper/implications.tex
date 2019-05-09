@@ -26,18 +26,16 @@ grades~\cite{lauer2017creditworthy}. In the 1960-70's, credit bureaus were faced
 with the challenge of identifying individuals and called for a universal
 numbering system. The obvious choice at this time was the Social Security
 Number. The financial industry had already began using it as an identifier for
-individuals and faced no legal challenges for non-governmetnal use. With the
+individuals and faced no legal challenges for non-governmental use. With the
 use of this number as an identifier, the crediting agencies reduced a person to
 a numerical value.
 
-% Figure for sql join on ssn
-\begin{center}
+% Example of sql join on ssn
 \begin{lstlisting}[language=SQL, basicstyle=\sffamily]
 		SELECT ssn, name, address, creditScore
 				FROM master
 				WHERE ssn=@target
 \end{lstlisting}
-\end{center}
 
 % Not sure if this belongs here.
 % What am I saying here?
@@ -50,27 +48,81 @@ classes are able to use these products. This was indeed the argument in the
 early 20\ts{th} century credit system. Nevertheless, these systems depend on
 rational groups to maintain these systems and data sets. The cost of a system
 like this is privacy. As the demarcation between digital and physical spaces
-becomes increasingly less apparent, the gaze of the surviellance entities is
-more profound, producing a reality of constant surviellance. Americans did not
+becomes increasingly less apparent, the gaze of the surveillance entities is
+more profound, producing a reality of constant surveillance. Americans did not
 realize how much they were giving up until the late 1960's during congressional
 hearings~\cite{lauer2017creditworthy}.
-
 % Interesting note on pg 183 of Lauer
 
-\para{Companies Respond}
-The common response by technology companies is the "trust us" model. Under this
-model, technology companies invoke self-governance as the response to ever
-growing concern that user data is being unethically and immorally exploited.
-This particular model may disrupt and obstruct governmental regulation. Ethical
-codes of conduct will deflect concerns, ultimately avoiding a reckoning~\cite{whittaker2018ai}
+\para{Control}
+While many of Representative Gallagher's prophecies were concerned with privacy,
+control was also an a point of contention for the 1966 congressional hearings.
+When committee heard testimony that a centralized database of American citizens would
+be realized with or without their input, they were astonished. The governmental
+authorities had fallen behind in control of information and the credit agencies were
+pioneering the field. The dystopian future that Gallagher describes where the computerized
+man is stripped of identity seemed Orwellian and far fetched in the 1960's, but
+now have been realized by the Chinese Communist Party (CCP) under Xi Jinping.
 
-Technology companies have responded in various ways. Google's CEO Sundar Pichai
-published \textit{AI at Google: our principles} in June of 2018. There, he
-outlines how Google's AI products will not reinforce bias or cause harm, and
-will be accountable, privacy sensitive, and benefit society. What is not
-outlined is what body will oversee the implementation of these principles in
-practice. Google has already struggled with composing a body that would oversee
-this, as their newly formed Ethics Board was absolved after 8 days of existence.
+In the surveillance economy, groups compete for information in order to
+influence others. Under Xi Jingping, the People's Republic of China (PRC) is
+dominanted by the government's information controling agaencies. The mechanisms
+for control are technological infrastructure and data collection through
+surveillance. The technological infrastructure is realized in 2 ways.
+First, the government deploys high quality video surveillance equipment
+across urban and rural areas of China. On the nose, the project was called Skynet.
+This equipment is used to collect image, video, and audio data on the PRC's citizens. Second, the
+CCP requires internet infrastructure organizations to enfore cencorship
+standards across their physical networks. This would be the US
+equivelent of Verizon dropping or blocking all requests for
+\texttt{www.amazon.com}. Additionally, internet infrastructure
+providers are often required to maintain their datastores within
+Chinese borders, maintaining a geographical restraint on the movement
+of data~\cite{qiang2019road}. The most profound digital realization of the
+CCP's surveillance campaign came through the Social Credit System.
 
-\para{Engineers Respond}
+Beginning in 2014, the CCP's Social Credit System (SCS) was deployed and began
+tracking the activities and subsequently offering inference on Chinese
+citizens. In a regression back to the deeply personal financial credit system
+of the 18\ts{th} century America, the SCS takes into account not only financial
+data, but also personal behavior. The financial data is acquired through the
+traditional means (e.g. cooperating credit bureaus) and personal behavior data
+is collected and enhanced by infrastructural projects like Skynet. Private
+corporations are complicit in the enhancement of the datasets used by the SCS
+as well. Alibaba provides social networking data to illuminate networks of
+individuals. The aforementioned internet providers also provide information
+detailing the  internet activites of citizens, for example posting
+anti-government propoganda on a social network site~\cite{qiang2019road}.
+Additionally, US based companies are assisting the CCP with control through information.
+In 2014, Lu Wei (CPP Internet Czar) was a guest of Facebook CEO Mark Zuckerberg and
+it was later revealed that Facebook was implementing a censored version of the application,
+where they could guarentee certain content was not seen on the news feeds of groups of Chinese citizens.
+Then in 2017, Apple's chinese version of the \texttt{appstore} removed more than 600 VPN providers,
+which would presumably be used to subvert chinese censorship (e.g. The Great Firewall of China).
+Finally in 2018, details of Google's chinese search engine \texttt{Project Dragonfly} was leaked, which
+search results relating to free speech, protests, and human rights~\cite{qiang2019road}.
 
+The expanse of influence through the SCS has already effected over 15 million
+people~\cite{qiang2019road}. By deploying the SCS, the CPC is able to quietly
+influence large swathes of people and groups. While this is one of the overt
+examples of surveillance economics enforcing totalitarianism, it is not far
+from the bleek prophecies heard during the 1966 congressional hearings on a
+universal citizen database.
+
+%\para{Companies Respond}
+%The common response by technology companies is the "trust us" model. Under this
+%model, technology companies invoke self-governance as the response to ever
+%growing concern that user data is being unethically and immorally exploited.
+%This particular model may disrupt and obstruct governmental regulation. Ethical
+%codes of conduct will deflect concerns, ultimately avoiding a reckoning~\cite{whittaker2018ai}
+%
+%Technology companies have responded in various ways. Google's CEO Sundar Pichai
+%published \textit{AI at Google: our principles} in June of 2018. There, he
+%outlines how Google's AI products will not reinforce bias or cause harm, and
+%will be accountable, privacy sensitive, and benefit society. What is not
+%outlined is what body will oversee the implementation of these principles in
+%practice. Google has already struggled with composing a body that would oversee
+%this, as their newly formed Ethics Board was absolved after 8 days of existence.
+%
+%\para{Engineers Respond}
+%
