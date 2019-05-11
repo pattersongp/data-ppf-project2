@@ -14,13 +14,23 @@ other systems that rely on big data. In order for predictive models to make
 classifications of or inferences about statistical populations, non-numerical
 data representing a person needs to be transformed. For example, whether you're
 marital status is single, divorced, or married needs to be represented as a
-numerical value. This is the case for all non-numerical data. At what cost are
+numerical value. This is the case for all non-numerical data. Most machine learning
+packages ship with the capabilities to preprocess data in this way, as seen in figure \ref{fig:scikit}. In At what cost are
 we transforming an individual's data to fit the models that shape the lives of
 many? % mention scikit learn here and how packages ship with this usually?
 
-The categorization of data began with \mca where data collectors used
-short hand to describe features of the data. They created rating systems
-similar to the mapping of academic performance to letter
+\begin{figure}[h]
+\begin{lstlisting}[language=python, basicstyle=\sffamily]
+        from sklearn.preprocessing import LabelEncoder
+        x_train = LabelEncoder().fit_transform(training_data)
+\end{lstlisting}
+\caption{An example of \texttt{scikit-learn}'s categorizing feature~\cite{scikit-learn}}
+		\label{fig:scikit}
+\end{figure}
+
+The categorization of data began with \mca where data collectors used short
+hand to describe features of the data. They created rating systems similar to
+the mapping of academic performance to letter
 grades~\cite{lauer2017creditworthy}. In the 1960-70's, credit bureaus were
 faced with the challenge of identifying individuals and called for a universal
 numbering system. The obvious choice at this time was the Social Security
