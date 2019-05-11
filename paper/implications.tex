@@ -15,9 +15,9 @@ classifications of or inferences about statistical populations, non-numerical
 data representing a person needs to be transformed. For example, whether you're
 marital status is single, divorced, or married needs to be represented as a
 numerical value. This is the case for all non-numerical data. Most machine learning
-packages ship with the capabilities to preprocess data in this way, as seen in figure \ref{fig:scikit}. In At what cost are
+packages ship with the capabilities to pre-process data in this way, as seen in figure \ref{fig:scikit}. In At what cost are
 we transforming an individual's data to fit the models that shape the lives of
-many? % mention scikit learn here and how packages ship with this usually?
+many?
 
 \begin{figure}[h]
 \begin{lstlisting}[language=python, basicstyle=\sffamily]
@@ -39,13 +39,6 @@ individuals and faced no legal challenges for non-governmental use. With the
 use of this number as an identifier, the crediting agencies reduced a person to
 a numerical value.
 
-% Example of sql join on ssn
-\begin{lstlisting}[language=SQL, basicstyle=\sffamily]
-		SELECT ssn, name, address, creditScore
-				FROM master
-				WHERE ssn=@target
-\end{lstlisting}
-
 Proponents of these new systems feel that they are realizing American democracy
 and leveling the playing field, while others consider it a rise in
 totalitarianism. The selling point of maintaining these data sets and
@@ -60,6 +53,16 @@ more profound, producing a reality of constant surveillance. Americans did not
 realize how much they were giving up until the late 1960's during congressional
 hearings~\cite{lauer2017creditworthy}.
 % Interesting note on pg 183 of Lauer
+
+\begin{figure}[h]
+\begin{lstlisting}[language=SQL, basicstyle=\sffamily]
+		SELECT ssn, name, address, creditScore
+		FROM master WHERE ssn=@target
+\end{lstlisting}
+\caption{An example of a database \texttt{SQL} query.}
+\label{fig:sql}
+\end{figure}
+
 
 \para{Identity}
 One the fundamental tasks of a state is to issue identity to new citizens.
@@ -153,7 +156,29 @@ examples of surveillance economics enforcing totalitarianism, it is not far
 from the bleak prophecies heard during the 1966 congressional hearings on a
 universal citizen database.
 
-\para{Chill}
+\para{The Chilling Effect}
+The surveillance by these companies creates a panoptic gaze that is apparent
+throughout our daily lives. This effect has been called the \ce
+~\cite{schauer1978fear},~\cite{richards2012dangers},~\cite{penney2016chilling}. The \ce is formally
+defined with respect an activity~\cite{schauer1978fear}, where the effect is
+seen to deter an activity. Historically, it is discussed in the context of the
+first amendment. During the Cold War, legal scholars looked to the define the
+effect that McCarthyism had on free speech, thus the ~\ce. One of the modern
+implications of the surveillance economy is a \ce of internet activity and
+internet speech.
+
+As shown previously, authentication on the Internet almost always implies an interaction
+with a major technology company. Systems of surveillance are deployed both by the state
+and by these technology companies. This known surveillance creates a \ce on the
+activities of benevolent parties on the Internet. This phenomenon has been shown
+by Berkley Law researchers by investigating the effect of the NSA/PRISM revelations
+in 2013, observing that internet traffic to privacy sensative Wikipedia sites
+declined in the years that followed~\cite{penney2016chilling}. They suggest
+that surveillance impacts access to information through detering online particpation.
+This phenomenon following the NSA/PRISM revelations is indeed analogous to the
+2016 US presidential elections and the Congressional hearings in the aftermath.
+Succinctly, a product of the data economy is the surveillance state, thus a \ce
+deters online participation.
 
 
 %\para{Companies Respond}
